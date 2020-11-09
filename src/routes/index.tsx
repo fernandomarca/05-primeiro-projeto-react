@@ -5,13 +5,11 @@ import Dashboard from '../pages/Dashboard';
 
 import Repository from '../pages/Repository';
 
-const Routes: React.FC = () => {
-  return (
-    <Switch>
-      <Route exact path="/" component={Dashboard} />
-      <Route path="/repository" component={Repository} />
-    </Switch>
-  )
-}
+const Routes: React.FC = () => (
+  <Switch>
+    <Route exact path="/" component={Dashboard} />
+    <Route path="/repository" component={Repository} />
+  </Switch>
+);
 
 export default Routes;
