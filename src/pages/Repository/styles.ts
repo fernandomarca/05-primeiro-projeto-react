@@ -1,0 +1,130 @@
+import styled from 'styled-components';
+
+export const Header = styled.header`
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+
+  a{
+    display:flex;
+    text-decoration:none;
+    text-align:center;
+    color:#a8a8b3;
+    transition:color 0.2s;
+
+    &:hover{
+      color:#666;
+    }
+
+    svg{
+    margin-right:4px;
+    }
+  }
+`;
+
+export const RepositoryInfo = styled.section`
+  margin-top:80px;
+
+  header{
+    display:flex;
+    align-items: center;
+
+    img{
+      width:120px;
+      height:120px;
+      border-radius:50%
+    }
+
+    div{
+      margin-left:24px;
+      flex-direction:column;
+      strong{
+        font-size:36px;
+        color:#3d3d4d;
+      }
+
+      p{
+        max-width:600px;
+        font-size:16px;
+        color:#737380;
+        margin-top:4px;
+        text-align: justify;
+      }
+    }
+  }
+
+  div{
+    display:flex;
+
+    ul{
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    margin-top:40px;
+
+      li{
+        margin-right:80px;
+
+        strong{
+          display:block;
+          font-size:36px;
+          color:#3d3d4d;
+        }
+        span{
+          display:block;
+          margin-top:4px;
+          color:#6c6c80;
+        }
+      }
+
+    }
+  }
+
+`;
+
+export const Issues = styled.div`
+
+  &:not(:first-child){
+  margin-top:16px;
+  }
+
+a{
+  background:#ffff;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 24px;
+
+  display: block;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: translateX 0.2s;
+
+  }
+    &:hover{
+    transform: translateX(10px);
+    svg{
+      color: blue;
+    }
+  }
+
+  div{
+    flex: 1;
+    margin: 0 16px;
+    strong{
+      font-size: 20px;
+      color:#3D3D4D;
+    }
+    p{
+      font-size: 18px;
+      color:#a8a8b3;
+      margin-top: 4px;
+      text-align: justify;
+    }
+  }
+
+  svg{
+    margin-left: auto;
+    color:#cbcbd6;
+  }
+}`;
